@@ -7,7 +7,7 @@
  * Chrome Extension via Message Passing (https://developer.chrome.com/extensions/messaging)
  *
  * Concerns: Some petitions' interfaces may not be automatable with such basic tooling (eg if they require actual
- * keystrokes)
+ * keystrokes). Also we'd have to write an "actionList" for each petition website.
  *
  * The example below works on part of this URL https://blacklivesmatter.com/demand-racial-data-on-coronavirus
  */
