@@ -10,6 +10,9 @@
  * keystrokes). Also we'd have to write an "actionList" for each petition website.
  *
  * The example below works on part of this URL https://blacklivesmatter.com/demand-racial-data-on-coronavirus
+ *
+ * It looks like this is similar to what UI.Vision RPA (formerly Kantu) does:
+ *   https://github.com/A9T9/Kantu/blob/8e275c4d162ebb4a5d9b834db2bb1022a5a6ce4f/src/common/command_runner.js
  */
 
 let actionList = [
@@ -59,7 +62,6 @@ function edit_attr(action) {
     let target = find_target(action['selector']);
     target[action['attr']] = action['value'];
 }
-
 
 async function run(actions) {
     for (let i = 0; i < actions.length; i++) {
